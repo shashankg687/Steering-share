@@ -1,0 +1,157 @@
+\documentclass[12pt,showpacs,bibnotes,prl,onecolumn]{revtex4}
+%\documentclass[12pt]{article}
+%\documentclass[twocolumn,showpacs,twoside,superscriptaddress]{revtex4}
+\usepackage{amssymb, amsbsy, amsmath, latexsym, dsfont, array, layout, graphicx,bm}
+\usepackage{color,soul}
+
+\newcommand{\fig}[1]{Fig.~\ref{#1}}
+\newcommand{\tab}[1]{Table~\ref{#1}}
+\newcommand{\one}{\mathds{1}}
+\newcommand{\ket}[1]{\left|{#1}\right\rangle}
+\newcommand{\bra}[1]{\left\langle{#1}\right|}
+\newcommand{\braket}[2]{\langle{#1}|{#2}\rangle}
+\newcommand{\ketbrad}[1]{\left|{#1}\rangle\!\langle{#1}\right|}
+\newcommand{\ketbra}[2]{\left|{#1}\rangle\!\langle{#2}\right|}
+
+\newcommand{\red}{\color[rgb]{0.8,0,0}}
+\newcommand{\blue}{\color[rgb]{0,0,0.6}}
+\newcommand{\green}{\color[rgb]{0.0,0.7,0.0}}
+
+
+% commenting commands
+\usepackage[normalem]{ulem}%This enables strike through text using the \sout{} command.
+\usepackage{color}
+\newcommand{\Tin}[1]{{\color{red} #1}}
+\newcommand{\Tout}[1]{{\color{blue} \sout{#1}}}
+
+\begin{document}
+
+\begin{center}
+{\bf {Responses to the reports on the manuscript AU12015A Gupta: ``Genuine Einstein-Podolsky-Rosen steering of three-qubit states by
+    multiple sequential observers"}}
+\end{center}
+
+
+
+\begin{center}
+  \textbf{Reply to the Report of the First Referee}
+\end{center}
+
+We thank  the referee for his/her insightful comments on our manuscript, and also
+for the suggestions to improve the presentation.  
+In the following, we reproduce the referee's report verbatim and address the referee's comments, providing details of the changes made in the revised version.
+
+{\red{\bf{Referee's Comment:}}} \textit{The primary objective of the paper is well-justified, considering the difficulty of generating multi-partite entangled states. The notion of multiple parties being able to independently demonstrate genuine multi-partite entanglement (or a nonlocal form of multi-partite correlation) through unsharp measurements is exceptionally interesting, and of interest to a broad audience in the quantum information science community.}
+
+{\blue{\bf{Author's Response:}}} We thank the referee for reviewing the manuscript with attention. We appreciate that the referee found our work important and interesting.\\
+
+{\red{\bf{Referee's Comment:}}} \textit{That said, this paper is a true complement to the studies in references 83 and 84. Where this paper considers how sequential unsharp measurements allow demonstration of genuine tri-partite steering across multiple parties, the other references answer precisely the same question in much the same fashion, but for entanglement, and Bell nonlocality, respectively. Though its novelty seems marginal, it is of sufficient interest to be worth publishing in
+Physical Review A as a regular article.}
+
+{\blue{\bf{Author's Response:}}} As mentioned by the referee, our work fills the gap by demonstrating the upper limit on the number of sequential observers who can detect genuine tripartite steering, whereas references [83] and [84] (now [94] and [95]) computed the same for genuine tripartite nonlocality and genuine tripartite entanglement, respectively. Hence, the present study, together with the aforementioned two earlier  studies,  reveals how the maximum number of sequential observers who can detect quantum correlation, differs in the context of the three inequivalent forms of genuine tripartite quantum correlations- genuine entanglement, genuine steering and genuine nonlocality. 
+
+Next, we would like to elaborate a bit on the novelty/significance of the present study.
+Genuine multipartite EPR steering acts as the primary resource in hybrid quantum networks, for example, in the context of multipartite secret sharing, and in the quantum internet.
+Sequential detection of genuine tripartite Bell nonlocality (Ref.[94] of the present version) implies sequential detection of genuine tripartite EPR steering. However, genuine EPR steering being a weaker correlation than genuine Bell nonlocality, it is important to investigate whether genuine EPR steering can be detected by a larger number of sequential parties compared to that in case of genuine Bell nonlocality. On the other hand, sequential detection of genuine entanglement (Ref.[95] of the present version) does not always imply sequential detection of genuine steering as genuine steering is not necessary for demonstrating genuine entanglement. These issues motivate the present study.
+
+Applications of the present study can  be demonstrated in   quantum secret sharing protocols. Secret sharing is a cryptography protocol where a dealer (say, Alice)  sends a message to players (say, Bob and Charlie) in  such a way that the message can be decoded only if Bob and Charlie collaborate to act together. The efficacy of this protocol is linked with the concept of tripartite steering. In this context, our results point out that Alice can share a secret message with a single Bob and multiple sequential Charlies as well using a tripartite steerable state. This direction thus illustrates the potential of our results in sharing secret messages with a larger number of players using only one copy of a tripartite steerable state. \\
+
+
+
+{\red{\bf{Referee's Comment:}}} \textit{Their initial definition for genuine tripartite entanglement only applies for pure states. In general, a state that is not separable across any bipartition (known as fully inseparable) may or may not be genuinely multi-partite entangled. They do point out the correct condition for mixed states via equation 2, so this may just be semantic nitpicking on my part.}
+
+{\blue{\bf{Author's Response:}}} Following the referee's comment, in the revised version we have provided the general definition of genuine tripartite entanglement in the first paragraph itself.\\
+
+{\red{\bf{Referee's Comment:}}} \textit{Considering that the number of third parties who can demonstrate steering is variable, it would be worthwhile to discuss the security implications of using such a system with an unknown number of third parties.}
+
+{\blue{\bf{Author's Response:}}} We have added a brief discussion in this direction in Section IV  of the revised manuscript. In particular, we mention that the present results have new implications on the security of  cryptography protocols  where genuine tripartite EPR steering is necessary. Suppose a  genuinely tripartite EPR steerable state is prepared and shared between three parties, say, Alice, Bob and Charlie. While passing one particle from the source to Charlie, it may be intercepted by an eavesdropper. It is evident from our analysis that tripartite EPR steering can still be detected by Charlie even when the eavesdropper disturbs the state by performing up to a certain number of local  unsharp measurements, and then passes the particle to Charlie. Hence, this interjection by the eavesdropper may not be noticed if steerability is tested as the criterion for security post the above-mentioned eavesdropping. 
+\\
+
+{\red{\bf{Referee's Comment:}}} \textit{There are actually known methods of witnessing genuine multi-partite entanglement that don’t require prior information about the state. See Phys. Rev. Research, 2, 043152 (2020) ``Quantifying tripartite entanglement with entropic correlations".}
+
+{\blue{\bf{Author's Response:}}} We thank the referee for pointing out this paper. We have cited it in Section I of the revised manuscript (Reference 13).\\
+
+{\red{\bf{Referee's Comment:}}} \textit{The paper would be substantially improved if even a brief discussion was given on how these unsharp measurements (equation 10) are carried out experimentally.}
+
+{\blue{\bf{Author's Response:}}} Following the referee's suggestion, we have added a discussion around Eqs.(10) and (11) in Section II of the revised manuscript.  We first present an  operational interpretation of the expectation values of unsharp observables, and then
+mention the experimental implementations of such unsharp measurements with trapped ion and photonic systems. \\
+
+\clearpage
+\begin{center}
+  \textbf{Reply to the Report of the Second Referee}
+\end{center}
+
+We thank the referee for his/her report, and also
+for the criticisms which have provided us an opportunity to improve the presentation.
+In the following, we reproduce the  report verbatim and address all the comments
+and concerns, providing details of the changes made in the revised version.
+
+
+
+{\red{\bf{Referee's Comment:}}} \textit{The main issue, which prevents me from recommending the manuscript for publication, is that I believe the scope to be too narrow. The paper takes the tools presented in references [48] and [83] and applies them to different scenarios. These scenarios are new, but differ from those
+in previous publication only by permutation of the parties. There are also no explanations of why these particular scenarios are relevant (as opposed to those from the previous publications).}
+
+{\blue{\bf{Author's Response:}}}  In the following, we summarize the significance of this paper. We explain why these particular scenarios are relevant and how they differ from those in the previous publications. As explained below, the difference arises due to
+physical considerations. The "permutation of the parties" as mentioned by the referee,
+is essential for the complete analysis of the hybrid tripartite network considered
+by us in this work. 
+
+1) Genuine multipartite EPR steering acts as the primary resource in hybrid quantum networks, for example, in the context of multipartite secret sharing, and the quantum internet. However, similar to other quantum correlations, preparing and preserving genuinely multipartite steerable states is a major obstacle in modern quantum technologies. Motivated from these issues, we address whether genuine multipartite EPR steerability of a state can be preserved even after performing a few cycles of local quantum operations.
+
+2)  Sequential detection of genuine tripartite Bell nonlocality (Ref.[94] of the revised version) implies sequential detection of genuine tripartite EPR steering. However, genuine EPR steering being a weaker correlation than genuine Bell nonlocality, it is important to investigate whether genuine EPR steering can be detected by a larger number of sequential parties compared to that in case of genuine Bell nonlocality. On the other hand, sequential detection of genuine entanglement (Ref.[95] of the revised version) does not always imply sequential detection of genuine steering as genuine steering is not necessary for demonstrating genuine entanglement. These issues motivate the present study.
+
+3) Applications of the present study can  be demonstrated in quantum secret sharing protocols. Secret sharing is a cryptography protocol where a dealer (say, Alice)  sends a message to players (say, Bob and Charlie) in  such a way that the message can be decoded only if Bob and Charlie collaborate to act together. The efficacy of this protocol is linked with the concept of tripartite steering. In this context, our results point out that Alice can share secret message with a single Bob and multiple sequential Charlies as well using a tripartite steerable state. This direction thus illustrates the potential of our results in sharing secret messages with a larger number of players using only one copy of a tripartite steerable state. 
+
+4) The present results have new implications on the security of  cryptography protocols where genuine tripartite EPR steering is necessary. Suppose a  genuinely tripartite EPR steerable state is prepared and shared between three parties, say, Alice, Bob and Charlie. While passing one particle from the source to Charlie, it may be intercepted by an eavesdropper. It is evident from our result that tripartite EPR steering can still be detected by Charlie even when the eavesdropper disturbs the state by performing up to a certain number of local quantum unsharp measurements, and then passes the particle to Charlie. Hence, this interjection by the eavesdropper may not be noticed if steerability is tested as the criterion for security post the above-mentioned eavesdropping.
+
+5) Finally, the present manuscript is the first step towards utilization of a single copy of genuine multipartite steerable state that in the long run may be useful in realising a quantum internet and hybrid network scenario with lesser resource.
+
+All the above issues have been discussed in appropriate places in Sections I and IV of the revised manuscript. \\
+
+
+
+{\red{\bf{Referee's Comment:}}} \textit{I believe the concept of genuine steering could be defined more clearly. Steering is a process which can be used to determine, whether the initial state was entangled. It seems to me that authors equal `states, which demonstrate genuine steering' to `states, for which
+steering by specific measurements reveals genuine tripartite entanglement,' but if it is so, it should be made more clear.}
+
+{\blue{\bf{Author's Response:}}} In the revised manuscript, we have added the physical interpretation of Equations.(3) and (5) based on which the definitions of genuine tripartite steering are presented (See the discussion below Eq.(3); and the discussion below Eq.(5)). 
+
+When an assemblage demonstrates genuine tripartite ($1 \rightarrow 2$) steering,  genuine tripartite entanglement in the one-sided device-independent scenario is detected. Similarly, when an assemblage demonstrates genuine tripartite ($2 \rightarrow 1$) steering,  genuine tripartite entanglement of the shared state in the two-sided device-independent scenario is detected. These issues have been discussed in detail in Refs.[54-57]. Following the referee's comments, in the revised manuscript, we have inserted
+the required clarifications.  \\
+
+{\red{\bf{Referee's Comment:}}} \textit{What would be the physical realization of the unsharp measurements?}
+
+{\blue{\bf{Author's Response:}}}  In view of the referee's suggestion, we have added a discussion around Equations.(10) and (11) of the revised manuscript. We first present the operational interpretation of the expectation values of unsharp observables, and
+next mention the experimental implementations of such unsharp measurements with trapped ion and photonic systems. \\
+
+{\red{\bf{Referee's Comment:}}} \textit{In the summary the authors write that their paper: ``complements the above studies on the analyses of preserving the three categories of genuine tripartite entanglement, steerability and Bell nonlocality." How are these terms related to the concept of ``genuine tripartite EPR steering" used in the manuscript?}
+
+{\blue{\bf{Author's Response:}}} Genuine tripartite entanglement is necessary for demonstrating genuine tripartite EPR steering, but not {\it vice-versa}. Similarly, genuine tripartite steering is necessary for genuine tripartite nonlocality, but again
+not {\it vice-versa}. Hence, the present study, together with the earlier two studies  (Refs.[94] and [95] of the revised version),  reveals how the maximum number of sequential observers  who can detect  quantum correlation, differs in the context of the aforementioned three inequivalent forms of genuine tripartite quantum correlations. Further, these three studies complete the analyses of preserving the three categories of genuine tripartite quantum correlations, {\it viz.} genuine entanglement, genuine steerabilty and genuine Bell nonlocality. In view of the referee's comments, we have 
+inserted this discussion in Section IV of the revised manuscript.\\
+
+
+
+\clearpage
+\begin{center}
+   \textbf{List of changes}
+\end{center}
+
+All the major modifications/additions incorporated in the revised manuscript are listed below  and these are indicated in Blue color in the revised manuscript.
+\begin{itemize}
+\item Section I, page 1, column 1: The definition of genuine multipartite entanglement has been provided.
+\item Section I, page 1, column 1:  The paper- Phys. Rev. Research, 2, 043152 has been  cited.
+\item Section I, page 2, column 1: Some additional comments have been included  to  clarify the motivation of the paper.
+\item Section I, page 2, column 2: A new paragraph has been added  to further
+bolster the motivation of this paper.
+\item Section IIA, page 3, column 2: A few comments are added below Eq.(3) for its physical interpretation and to clarify the link between genuine tripartite ($1 \rightarrow 2$) steering and detection of genuine tripartite entanglement in one-sided device-independent scenario.
+\item Section IIA, page 4, column 1: A few comments are added below Eq.(5) for its physical interpretation  and to clarify the link between genuine tripartite ($2 \rightarrow 1$) steering and detection of genuine tripartite entanglement in two-sided device-independent scenario.
+\item Section IIB, page 6, column 2; and page 7, column 1: A discussion is inserted to demonstrate the operational interpretation of the expectation values of unsharp observables and the physical realizations of unsharp measurements. 
+\item Section IV, page 12, columns 1 and 2: A discussion is added from the end of the third paragraph of Section IV onwards,   to illustrate applications in quantum secret sharing, and security implications of our analysis.
+
+
+\end{itemize}
+
+
+
+
+\end{document} 
